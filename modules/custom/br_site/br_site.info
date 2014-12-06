@@ -1,0 +1,6 @@
+name = BR Site
+description = "Custom hooks and functionality for BR"
+
+core = 7.x
+package = BR
+configure = admin/config/development/br_site
