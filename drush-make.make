@@ -64,10 +64,10 @@ projects[views][download][tag] = "7.x-3.8"
 
 ; themes and related
 
-; projects[mothership][download][url] = http://git.drupal.org/project/mothership.git
-; projects[mothership][download][tag] = 7.x-2.10
-; projects[mothership][subdir] = contrib
-; projects[mothership][download][type] = git
+projects[mothership][download][url] = http://git.drupal.org/project/mothership.git
+projects[mothership][download][tag] = 7.x-2.10
+projects[mothership][subdir] = contrib
+projects[mothership][download][type] = git
 
 ; libraries
 
