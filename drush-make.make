@@ -92,6 +92,12 @@ projects[search_api_db][download][type] = "git"
 projects[search_api_db][download][url] = "http://git.drupal.org/project/search_api_db.git"
 projects[search_api_db][download][tag] = "7.x-1.4"
 
+projects[token][type] = "module"
+projects[token][subdir] = "contrib"
+projects[token][download][type] = "git"
+projects[token][download][url] = "http://git.drupal.org/project/token.git"
+projects[token][download][tag] = "7.x-1.5"
+
 ; themes and related
 
 projects[mothership][download][url] = http://git.drupal.org/project/mothership.git
