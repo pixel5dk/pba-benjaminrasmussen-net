@@ -1,6 +1,10 @@
 <?php
 
 function br_preprocess_node(&$vars) {
+  if($vars['view_mode'] == 'page_header') {
+    $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->type . '--page-header';   
+    $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->nid . '--page-header';
+  }
   if($vars['view_mode'] == 'frontpage_default') {
     $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->type . '--frontpage-default';   
     $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->nid . '--frontpage-default';
