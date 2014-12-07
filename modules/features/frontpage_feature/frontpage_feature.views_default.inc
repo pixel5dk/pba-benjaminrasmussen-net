@@ -30,8 +30,10 @@ function frontpage_feature_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'entity';
-  $handler->display->display_options['row_options']['view_mode'] = 'teaser';
+  $handler->display->display_options['row_options']['view_mode'] = 'frontpage_default';
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
@@ -64,15 +66,6 @@ function frontpage_feature_views_default_views() {
     'blog_post' => 'blog_post',
     'portfolio_item' => 'portfolio_item',
   );
-  /* Filter criterion: Indexed Node: Frontpage Status */
-  $handler->display->display_options['filters']['field_frontpage_status']['id'] = 'field_frontpage_status';
-  $handler->display->display_options['filters']['field_frontpage_status']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['filters']['field_frontpage_status']['field'] = 'field_frontpage_status';
-  $handler->display->display_options['filters']['field_frontpage_status']['value'] = array(
-    5 => '5',
-    7 => '7',
-    6 => '6',
-  );
   $handler->display->display_options['pane_title'] = 'View : Frontpage : All';
 
   /* Display: Frontpage : Default */
@@ -97,6 +90,13 @@ function frontpage_feature_views_default_views() {
 
   /* Display: Frontpage : Breaking */
   $handler = $view->new_display('panel_pane', 'Frontpage : Breaking', 'frontpage_breaking');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'entity';
+  $handler->display->display_options['row_options']['view_mode'] = 'frontpage_breaking';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Indexed Node: Content type */
@@ -117,6 +117,13 @@ function frontpage_feature_views_default_views() {
 
   /* Display: Frontpage : Hot */
   $handler = $view->new_display('panel_pane', 'Frontpage : Hot', 'frontpage_hot');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'entity';
+  $handler->display->display_options['row_options']['view_mode'] = 'frontpage_hot';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Indexed Node: Content type */
