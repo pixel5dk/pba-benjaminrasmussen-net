@@ -3,8 +3,6 @@
  * 
  *
  */
-dpm($node);
-dpm($content);
 ?>
 <a href="<?php print $node_url; ?>">
   <div class="frontpage__item--container frontpage__default--container frontpage__blog">
