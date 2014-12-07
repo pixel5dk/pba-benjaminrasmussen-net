@@ -26,6 +26,12 @@ projects[context][download][type] = "git"
 projects[context][download][url] = "http://git.drupal.org/project/context.git"
 projects[context][download][tag] = "7.x-3.3"
 
+projects[ckeditor][type] = "module"
+projects[ckeditor][subdir] = "contrib"
+projects[ckeditor][download][type] = "git"
+projects[ckeditor][download][url] = "http://git.drupal.org/project/ckeditor.git"
+projects[ckeditor][download][tag] = "7.x-1.16"
+
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 projects[devel][download][type] = "git"
