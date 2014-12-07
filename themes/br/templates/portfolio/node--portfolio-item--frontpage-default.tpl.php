@@ -1,9 +1,8 @@
 <?php
 /**
- * 
+ * todo: add comment syntax
  *
  */
-dpm($content);
 ?>
 <a href="<?php print $node_url; ?>">
   <div class="frontpage__item--container frontpage__default--container frontpage__portfolio">

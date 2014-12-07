@@ -9,6 +9,10 @@
 * Implements hook_entity_info_alter().
 */
 function br_site_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['page_header'] = array(
+    'label' => t('Page Header (Green)'),
+    'custom settings' => TRUE,
+  );
   $entity_info['node']['view modes']['frontpage_breaking'] = array(
     'label' => t('Frontpage Breaking'),
     'custom settings' => TRUE,
