@@ -1,0 +1,13 @@
+name = Portfolio Feature
+description = Portfolio
+core = 7.x
+package = BR
+version = 7.x-1.0
+project = portfolio_feature
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:2
+features[field_instance][] = node-portfolio_item-body
+features[node][] = portfolio_item
+features_exclude[field_base][body] = body
+mtime = 1417913367

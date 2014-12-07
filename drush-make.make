@@ -32,6 +32,12 @@ projects[devel][download][type] = "git"
 projects[devel][download][url] = "http://git.drupal.org/project/devel.git"
 projects[devel][download][tag] = "7.x-1.5"
 
+projects[entity][type] = "module"
+projects[entity][subdir] = "contrib"
+projects[entity][download][type] = "git"
+projects[entity][download][url] = "http://git.drupal.org/project/entity.git"
+projects[entity][download][tag] = "7.x-1.5"
+
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
 projects[features][download][type] = "git"
@@ -61,6 +67,18 @@ projects[views][subdir] = "contrib"
 projects[views][download][type] = "git"
 projects[views][download][url] = "http://git.drupal.org/project/views.git"
 projects[views][download][tag] = "7.x-3.8"
+
+projects[search_api][type] = "module"
+projects[search_api][subdir] = "contrib"
+projects[search_api][download][type] = "git"
+projects[search_api][download][url] = "http://git.drupal.org/project/search_api.git"
+projects[search_api][download][tag] = "7.x-1.13"
+
+projects[search_api_db][type] = "module"
+projects[search_api_db][subdir] = "contrib"
+projects[search_api_db][download][type] = "git"
+projects[search_api_db][download][url] = "http://git.drupal.org/project/search_api_db.git"
+projects[search_api_db][download][tag] = "7.x-1.4"
 
 ; themes and related
 
