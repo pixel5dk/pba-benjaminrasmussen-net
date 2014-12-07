@@ -4,6 +4,6 @@
  *
  */
 ?>
-<div class="frontpage--container frontpage__breaking--container">
+<div class="frontpage__item--container frontpage__breaking--container frontpage__portfolio">
 <?php print render($content['field_image_portfolio']['0']); ?>
 </div>

@@ -1,3 +1,4 @@
 settings_secret.php
 modules/contrib
 themes/contrib
+**/.sass-cache/*
