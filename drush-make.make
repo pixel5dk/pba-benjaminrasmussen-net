@@ -62,6 +62,12 @@ projects[panels][download][type] = "git"
 projects[panels][download][url] = "http://git.drupal.org/project/panels.git"
 projects[panels][download][tag] = "7.x-3.4"
 
+projects[pathauto][type] = "module"
+projects[pathauto][subdir] = "contrib"
+projects[pathauto][download][type] = "git"
+projects[pathauto][download][url] = "http://git.drupal.org/project/pathauto.git"
+projects[pathauto][download][tag] = "7.x-1.2"
+
 projects[variable][type] = "module"
 projects[variable][subdir] = "contrib"
 projects[variable][download][type] = "git"
