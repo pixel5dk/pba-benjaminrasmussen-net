@@ -26,3 +26,47 @@ function br_site_entity_info_alter(&$entity_info) {
     'custom settings' => TRUE,
   );
 }
+
+/**
+* Implements hook_node_update().
+*/
+function br_site_node_update($node) {
+
+// field_frontpage_status hot breaking default
+
+// todo: Do this better
+$breaking_id = 5;
+$hot_id = 6;
+$hidden_id = 8;
+$default_id = 7;
+
+  // If the udpated node is an article and it is set to breaking we must reset
+  // the breaking field on all other articles.
+  if (($node->type->value() == 'blog_post') || ($node->type->value() == 'portfolio_item')) {
+   
+    $node_field_frontpage_status = $node->field_frontpage_status[LANGUAGE_NONE][0]['tid'];
+    if (($node_field_frontpage_status == $breaking_id) || ($node_field_frontpage_status == $hot_id)) {
+      $query = new EntityFieldQuery();
+        $query->entityCondition('entity_type', 'node')
+          ->entityCondition('bundle', array('portfolio_item','blog_post'));
+          //->fieldCondition('field_frontpage_status', 'tid', $node_field_frontpage_status, '=')
+          //->propertyCondition('nid', $node->nid->value(), '!=');
+
+      $result = $query->execute();
+      //$nodes = node_load_multiple(array_keys($result['node']));
+       
+      dpm($nodes);
+      /*
+      foreach ($nodes as $nid => $updated_node) {
+        $updated_node->field_frontpage_status[LANGUAGE_NONE][0]['tid'] = $default_id;
+        dpm($updated_node);
+        //node_save($updated_node);
+      }
+*/
+
+
+    }
+
+  }
+
+}
