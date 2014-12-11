@@ -13,6 +13,10 @@ function br_site_entity_info_alter(&$entity_info) {
     'label' => t('Page Header (Green)'),
     'custom settings' => TRUE,
   );
+  $entity_info['node']['view modes']['page_content'] = array(
+    'label' => t('Page Content (White)'),
+    'custom settings' => TRUE,
+  );
   $entity_info['node']['view modes']['frontpage_breaking'] = array(
     'label' => t('Frontpage Breaking'),
     'custom settings' => TRUE,
