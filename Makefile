@@ -19,7 +19,7 @@ backup-db:
 	#$(MYSQLDUMP) $(DB_NAME) | gzip > $(BACKUP_DIR)/$(DB_NAME)_$(NOW).sql.gz
 
 drush-make:
-	drush make --working-copy --no-core --contrib-destination=. -y $(DRUSH_MAKEFILE)
+	drush make -only-once --strict=0 --working-copy --no-core --contrib-destination=. -y $(DRUSH_MAKEFILE)
 
 clear-cache:
 	drush cc all

@@ -38,17 +38,19 @@ function search_api_feature_default_search_api_index() {
       },
       "fields" : {
         "author" : { "type" : "integer", "entity_type" : "user" },
+        "body:format" : { "type" : "string" },
+        "body:summary" : { "type" : "text" },
         "body:value" : { "type" : "text" },
         "changed" : { "type" : "date" },
         "comment_count" : { "type" : "integer" },
         "created" : { "type" : "date" },
         "field_categories_portfolio" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_frontpage_status" : { "type" : "integer", "entity_type" : "taxonomy_term" },
-        "field_headline" : { "type" : "text" },
         "field_tags" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "nid" : { "type" : "integer" },
         "promote" : { "type" : "boolean" },
         "search_api_language" : { "type" : "string" },
+        "status" : { "type" : "integer" },
         "sticky" : { "type" : "boolean" },
         "title" : { "type" : "text", "boost" : "5.0" },
         "type" : { "type" : "string" }
@@ -146,11 +148,6 @@ function search_api_feature_default_search_api_server() {
             "type" : "list\\u003Cinteger\\u003E",
             "boost" : "1.0"
           },
-          "field_headline" : {
-            "table" : "search_api_db_default_node_index_text",
-            "type" : "text",
-            "boost" : "1.0"
-          },
           "field_categories_portfolio" : {
             "table" : "search_api_db_default_node_index_field_categories_portfolio",
             "column" : "value",
@@ -161,6 +158,23 @@ function search_api_feature_default_search_api_server() {
             "table" : "search_api_db_default_node_index",
             "column" : "field_frontpage_status",
             "type" : "integer",
+            "boost" : "1.0"
+          },
+          "status" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "status",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "body:summary" : {
+            "table" : "search_api_db_default_node_index_text",
+            "type" : "text",
+            "boost" : "1.0"
+          },
+          "body:format" : {
+            "table" : "search_api_db_default_node_index",
+            "column" : "body_format",
+            "type" : "string",
             "boost" : "1.0"
           }
         }
