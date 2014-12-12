@@ -25,51 +25,34 @@
 <div class="panel-2columns-bricks">
   <div class="content__container--page-header">
     <div class="content__container">
-
-    <?php print $content['top']; ?>
+      <?php print $content['top']; ?>
     </div>
   </div>
-  <div class="panel-2columns-bricks__left panel__region">
+
+  <div class="content__container">
     <div class="content__container--left">
-
-    <?php print $content['left_above']; ?>
+      <?php print $content['left_above']; ?>
     </div>
-
-  </div>
-
-  <div class="panel-2columns-bricks__right panel__region">
     <div class="content__container--right">
-
-    <?php print $content['right_above']; ?>
+      <?php print $content['right_above']; ?>
     </div>
-
   </div>
-  <div class="panel-2columns-bricks__middle panel__region">
-    <div class="content__container">
 
+  <div class="content__container">
     <?php print $content['middle']; ?>
-    </div>
-
   </div>
-  <div class="panel-2columns-bricks__left panel__region">
+
+  <div class="content__container">
     <div class="content__container--left">
-
-    <?php print $content['left_below']; ?>
+      <?php print $content['left_below']; ?>
     </div>
-
-  </div>
-  <div class="panel-2columns-bricks__right panel__region">
     <div class="content__container--right">
-  
-    <?php print $content['right_below']; ?>
-
+      <?php print $content['right_below']; ?>
     </div>
   </div>
-  <div class="panel-2columns-bricks__bottom panel__region">
-    <div class="content__container--left">
 
+  <div class="content__container">
     <?php print $content['bottom']; ?>
-    </div>
-
   </div>
+
 </div>

@@ -66,6 +66,16 @@ body {
   margin-right: auto;
 }
 
+.content__container--left {
+  width: 660px;
+  float: left;
+}
+
+.content__container--right {
+  width: 330px;
+  float: left;
+}
+
 .content__container--page-header {
   background-color: $color-main;
   width: 100%;
