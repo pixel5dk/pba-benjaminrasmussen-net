@@ -1,6 +1,6 @@
 
 BACKUP_DIR=/vagrant/drushdumps
-NOW=$(shell date +%Y%m%d%H%M%S)
+NOW=$(shell date +%Y-%m-%d_%H-%M)
 # DOMAIN=benjaminrasmussen.net
 DB_NAME=d7_benjaminrasmussen
 ADMIN_USER=root

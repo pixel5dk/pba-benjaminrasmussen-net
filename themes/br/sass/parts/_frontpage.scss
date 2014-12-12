@@ -11,10 +11,19 @@
   overflow: hidden;
 
   &:hover {
-    .frontpage__item--headers--sub, .frontpage__item--headers--title {
-      background-color: $color-main-dark;  
-    }  
+    .frontpage__item--image, .frontpage__item--content {
+      -webkit-transform: translateY(-50px);
+      -moz-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+      transform: translateY(-50px);      
+    }
   }
+}
+
+.frontpage__item--image, .frontpage__item--content, .frontpage__item--caption {
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
 }
 
 .frontpage__item--image, .frontpage__item--content {
@@ -56,6 +65,16 @@
 .frontpage__item--headers--title {
   font-weight: bold;
   font-size: 22px;
+}
+
+.frontpage__item--caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background-color: $color-main;
+  color: $color-white;  
 }
 
 .frontpage__breaking--container {
