@@ -17,7 +17,26 @@
       </div>  
     </div>
     <div class="frontpage__item--caption">
-      Caption
+      Caption Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+Caption 
+
     </div>
   </div>
 </a>
