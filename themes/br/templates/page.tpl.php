@@ -1,8 +1,8 @@
 <div class="header__container">
   <div class="content__container">
     <div class="header__brand">
-        <p class="header__brand--title"><?php print $site_name ?></p>
-        <p class="header__brand--sub"><?php print t('Webdesigner and & developer'); ?></p>
+        <p class="header__brand--title"><a href="<?php print $front_page; ?>"><?php print $site_name ?></a></p>
+        <p class="header__brand--sub"><?php print $site_slogan; ?></p>
 
     </div>
     <div class="header__navigation">

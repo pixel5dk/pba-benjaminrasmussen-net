@@ -12,9 +12,12 @@
     </div>
     <div class="frontpage__item--content">
       <div class="frontpage__item--headers">
-        <p class="frontpage__item--headers--sub">blog</p>
+        <p class="frontpage__item--headers--sub"><?php print t('blog'); ?></p>
         <p class="frontpage__item--headers--title"><?php print render($node->title); ?></p>
       </div>  
+    </div>
+    <div class="frontpage__item--caption">
+      Caption
     </div>
   </div>
 </a>

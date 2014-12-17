@@ -14,7 +14,10 @@
       <div class="frontpage__item--headers">
         <p class="frontpage__item--headers--sub"><?php print render($content['field_categories_portfolio']['0']); ?></p>
         <p class="frontpage__item--headers--title"><?php print render($node->title); ?></p>
-      </div>  
+      </div>
+    </div>
+    <div class="frontpage__item--caption">
+      Caption
     </div>
   </div>
 </a>

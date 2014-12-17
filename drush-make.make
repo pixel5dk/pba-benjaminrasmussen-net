@@ -38,6 +38,12 @@ projects[devel][download][type] = "git"
 projects[devel][download][url] = "http://git.drupal.org/project/devel.git"
 projects[devel][download][tag] = "7.x-1.5"
 
+projects[diff][type] = "module"
+projects[diff][subdir] = "contrib"
+projects[diff][download][type] = "git"
+projects[diff][download][url] = "http://git.drupal.org/project/diff.git"
+projects[diff][download][tag] = "7.x-3.2"
+
 projects[entity][type] = "module"
 projects[entity][subdir] = "contrib"
 projects[entity][download][type] = "git"

@@ -1,6 +1,14 @@
 <?php
 
 function br_preprocess_node(&$vars) {
+  if($vars['view_mode'] == 'teaser_compact') {
+    $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->type . '--teaser-compact';   
+    $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->nid . '--teaser-compact';
+  }
+  if($vars['view_mode'] == 'page_content') {
+    $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->type . '--page-content';   
+    $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->nid . '--page-content';
+  }
   if($vars['view_mode'] == 'page_header') {
     $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->type . '--page-header';   
     $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->nid . '--page-header';
