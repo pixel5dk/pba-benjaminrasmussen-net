@@ -63,10 +63,10 @@ function blog_feature_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-7d52cd70-6fb1-4ee4-8b6d-3b567a9e8170';
+    $pane->pid = 'new-7dd6f501-906b-483a-85e7-57675b1fe867';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'frontpage_view-frontpage_default';
+    $pane->subtype = 'blog_posts-overview';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -78,9 +78,9 @@ function blog_feature_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '7d52cd70-6fb1-4ee4-8b6d-3b567a9e8170';
-    $display->content['new-7d52cd70-6fb1-4ee4-8b6d-3b567a9e8170'] = $pane;
-    $display->panels['middle'][0] = 'new-7d52cd70-6fb1-4ee4-8b6d-3b567a9e8170';
+    $pane->uuid = '7dd6f501-906b-483a-85e7-57675b1fe867';
+    $display->content['new-7dd6f501-906b-483a-85e7-57675b1fe867'] = $pane;
+    $display->panels['middle'][0] = 'new-7dd6f501-906b-483a-85e7-57675b1fe867';
     $pane = new stdClass();
     $pane->pid = 'new-7e70287a-73dc-44c5-886c-a34e042559b7';
     $pane->panel = 'top';

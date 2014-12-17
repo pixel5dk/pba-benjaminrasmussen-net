@@ -66,7 +66,7 @@ function frontpage_feature_views_default_views() {
     'blog_post' => 'blog_post',
     'portfolio_item' => 'portfolio_item',
   );
-  $handler->display->display_options['pane_title'] = 'View : Frontpage : All';
+  $handler->display->display_options['pane_title'] = 'Frontpage : All';
 
   /* Display: Frontpage : Default */
   $handler = $view->new_display('panel_pane', 'Frontpage : Default', 'frontpage_default');
@@ -87,6 +87,7 @@ function frontpage_feature_views_default_views() {
   $handler->display->display_options['filters']['field_frontpage_status']['value'] = array(
     7 => '7',
   );
+  $handler->display->display_options['pane_title'] = 'Frontpage : Default';
 
   /* Display: Frontpage : Breaking */
   $handler = $view->new_display('panel_pane', 'Frontpage : Breaking', 'frontpage_breaking');
@@ -114,6 +115,7 @@ function frontpage_feature_views_default_views() {
   $handler->display->display_options['filters']['field_frontpage_status']['value'] = array(
     5 => '5',
   );
+  $handler->display->display_options['pane_title'] = 'Frontpage : Breaking';
 
   /* Display: Frontpage : Hot */
   $handler = $view->new_display('panel_pane', 'Frontpage : Hot', 'frontpage_hot');
@@ -141,6 +143,7 @@ function frontpage_feature_views_default_views() {
   $handler->display->display_options['filters']['field_frontpage_status']['value'] = array(
     6 => '6',
   );
+  $handler->display->display_options['pane_title'] = 'Frontpage : Hot';
   $translatables['frontpage_view'] = array(
     t('Master'),
     t('more'),
@@ -154,7 +157,6 @@ function frontpage_feature_views_default_views() {
     t('.'),
     t(','),
     t('Frontpage : All'),
-    t('View : Frontpage : All'),
     t('View panes'),
     t('Frontpage : Default'),
     t('Frontpage : Breaking'),

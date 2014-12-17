@@ -63,10 +63,10 @@ function portfolio_feature_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-b8a8cea4-059f-4b6c-ac60-d86fe8cfa03c';
+    $pane->pid = 'new-34105214-bbc7-4c7d-a106-69fb5f5bf2a6';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'frontpage_view-frontpage_default';
+    $pane->subtype = 'portfolio_items-overview';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -78,9 +78,9 @@ function portfolio_feature_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'b8a8cea4-059f-4b6c-ac60-d86fe8cfa03c';
-    $display->content['new-b8a8cea4-059f-4b6c-ac60-d86fe8cfa03c'] = $pane;
-    $display->panels['middle'][0] = 'new-b8a8cea4-059f-4b6c-ac60-d86fe8cfa03c';
+    $pane->uuid = '34105214-bbc7-4c7d-a106-69fb5f5bf2a6';
+    $display->content['new-34105214-bbc7-4c7d-a106-69fb5f5bf2a6'] = $pane;
+    $display->panels['middle'][0] = 'new-34105214-bbc7-4c7d-a106-69fb5f5bf2a6';
     $pane = new stdClass();
     $pane->pid = 'new-6922d732-4417-4696-ab9e-5dab85e3f198';
     $pane->panel = 'top';
