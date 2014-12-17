@@ -15,3 +15,4 @@
     </li>
   <?php endforeach; ?>
 </ul>
+<a class="listing--view-more" href="<?php print url('<front>'); ?>blog"><?php print t('All blog posts'); ?></a>

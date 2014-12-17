@@ -3,12 +3,23 @@
   margin: 0;
   padding: 0;
   li {
-    border-bottom: 1px solid $color-alt;
-    padding: 3px;
+    border-bottom: 1px solid;
+    border-color: rgba($color-alt-r, $color-alt-g, $color-alt-b, 0.5);
+    padding-top: 8px;
+    padding-bottom: 8px;
 
     &:first-of-type {
       border-top: 3px solid $color-alt;
     }
+  }
+}
+
+.listing--view-more {
+  float: right;
+  padding-top: 8px;
+
+  &:after {
+    content: ' \203A';
   }
 }
 

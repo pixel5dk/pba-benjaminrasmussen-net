@@ -14,6 +14,8 @@
 
 .portfolio__item--headers--sub {
   margin-top: 0;
+  margin-bottom: 5px;
+  padding: 0;
   font-size: 28px;
   font-weight: bold;
 }
@@ -21,4 +23,8 @@
 .portfolio__item--content {
   margin: 0;
   padding: 0 25px 0 25px;
+
+  p:first-of-type {
+    margin-top: 10px;
+  }
 }

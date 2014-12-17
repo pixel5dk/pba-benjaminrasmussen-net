@@ -1,0 +1,40 @@
+.blog__post--page {
+  padding-right: 40px;
+}
+
+.blog__post--headers {
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog__post--headers--label {
+  position: absolute;
+  top: 25px;
+  font-size: 18px;
+  color: rgba($color-white-r, $color-white-g, $color-white-b, 0.4)
+}
+
+.blog__post--headers--title {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.blog__post--headers--sub {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.blog__post--content {
+  margin: 0;
+  padding: 0;
+}
+

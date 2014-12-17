@@ -4,4 +4,8 @@
  *
  */
 ?>
-<?php print render($content['body']['#items']['0']); ?>
+<div class="blog__post--page">
+  <div class="blog__item--content">
+    <?php print render($content['body']['0']); ?>
+  </div>
+</div>
