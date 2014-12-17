@@ -1,7 +1,7 @@
 <?php
 /*
-* todo: Add proper commentary
-*/
+ * todo: Add proper commentary
+ */
 ?>
 <div class="portfolio-item--page">
   <div class="portfolio__item--headers">

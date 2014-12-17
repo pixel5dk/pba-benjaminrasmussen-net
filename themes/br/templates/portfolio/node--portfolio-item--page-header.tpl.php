@@ -1,3 +1,10 @@
+<?php
+/*
+ * todo: add comment syntax
+ *
+ */
+?>
+
 <div class="slider">
   <?php 
     $i = 0;

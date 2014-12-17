@@ -16,8 +16,5 @@
         <p class="frontpage__item--headers--title"><?php print render($node->title); ?></p>
       </div>  
     </div>
-    <div class="frontpage__item--caption">
-      Caption
-    </div>
   </div>
 </a>
