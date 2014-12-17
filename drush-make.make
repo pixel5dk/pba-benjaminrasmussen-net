@@ -26,11 +26,29 @@ projects[context][download][type] = "git"
 projects[context][download][url] = "http://git.drupal.org/project/context.git"
 projects[context][download][tag] = "7.x-3.3"
 
+projects[ckeditor][type] = "module"
+projects[ckeditor][subdir] = "contrib"
+projects[ckeditor][download][type] = "git"
+projects[ckeditor][download][url] = "http://git.drupal.org/project/ckeditor.git"
+projects[ckeditor][download][tag] = "7.x-1.16"
+
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 projects[devel][download][type] = "git"
 projects[devel][download][url] = "http://git.drupal.org/project/devel.git"
 projects[devel][download][tag] = "7.x-1.5"
+
+projects[diff][type] = "module"
+projects[diff][subdir] = "contrib"
+projects[diff][download][type] = "git"
+projects[diff][download][url] = "http://git.drupal.org/project/diff.git"
+projects[diff][download][tag] = "7.x-3.2"
+
+projects[entity][type] = "module"
+projects[entity][subdir] = "contrib"
+projects[entity][download][type] = "git"
+projects[entity][download][url] = "http://git.drupal.org/project/entity.git"
+projects[entity][download][tag] = "7.x-1.5"
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
@@ -44,11 +62,23 @@ projects[i18n][download][type] = "git"
 projects[i18n][download][url] = "http://git.drupal.org/project/i18n.git"
 projects[i18n][download][tag] = "7.x-1.11"
 
+projects[jquery_update][type] = "module"
+projects[jquery_update][subdir] = "contrib"
+projects[jquery_update][download][type] = "git"
+projects[jquery_update][download][url] = "http://git.drupal.org/project/jquery_update.git"
+projects[jquery_update][download][tag] = "7.x-2.4"
+
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
 projects[panels][download][type] = "git"
 projects[panels][download][url] = "http://git.drupal.org/project/panels.git"
 projects[panels][download][tag] = "7.x-3.4"
+
+projects[pathauto][type] = "module"
+projects[pathauto][subdir] = "contrib"
+projects[pathauto][download][type] = "git"
+projects[pathauto][download][url] = "http://git.drupal.org/project/pathauto.git"
+projects[pathauto][download][tag] = "7.x-1.2"
 
 projects[variable][type] = "module"
 projects[variable][subdir] = "contrib"
@@ -61,6 +91,24 @@ projects[views][subdir] = "contrib"
 projects[views][download][type] = "git"
 projects[views][download][url] = "http://git.drupal.org/project/views.git"
 projects[views][download][tag] = "7.x-3.8"
+
+projects[search_api][type] = "module"
+projects[search_api][subdir] = "contrib"
+projects[search_api][download][type] = "git"
+projects[search_api][download][url] = "http://git.drupal.org/project/search_api.git"
+projects[search_api][download][tag] = "7.x-1.13"
+
+projects[search_api_db][type] = "module"
+projects[search_api_db][subdir] = "contrib"
+projects[search_api_db][download][type] = "git"
+projects[search_api_db][download][url] = "http://git.drupal.org/project/search_api_db.git"
+projects[search_api_db][download][tag] = "7.x-1.4"
+
+projects[token][type] = "module"
+projects[token][subdir] = "contrib"
+projects[token][download][type] = "git"
+projects[token][download][url] = "http://git.drupal.org/project/token.git"
+projects[token][download][tag] = "7.x-1.5"
 
 ; themes and related
 

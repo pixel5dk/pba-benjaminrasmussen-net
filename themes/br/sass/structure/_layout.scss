@@ -1,0 +1,95 @@
+body {
+  margin: 0; // todo: fix these things
+  &:before {
+    display: none !important;
+  }
+}
+
+.header__container {
+  margin: 0;
+  padding-top: 20px;
+  height: 135px; // todo: fix this
+  width: 100%;
+  background-color: $color-alt;
+  color: $color-white;
+
+  a, a:link, a:active, a.active { color: $color-white; }
+}
+
+.header__brand {
+  float: left;
+  width: 460px;
+
+  p {
+    margin: 0;
+  }
+
+}
+.header__brand--title {
+  font-size: 34px;  
+  font-weight: bold;
+}
+
+.header__brand--sub {
+  font-size: 22px;
+
+}
+
+.header__navigation {
+  width: 500px;
+  float: right;
+  margin-top: 5px; // todo: fix this
+  text-align: right;
+  font-size: 22px;
+  font-weight: bold;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+    }
+
+    li:not(:first-child) {
+      &:before {
+        content: '\2022';
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.content__container {
+  width: 991px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+.content__container--left {
+  width: 660px;
+  float: left;
+}
+
+.content__container--right {
+  width: 330px;
+  float: left;
+}
+
+.content__container--page-header {
+  background-color: $color-main;
+  width: 100%;
+  margin-top: -25px; //Todo: Fix this
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: $color-white;
+  text-align: center;
+
+  a, a:link, a:active, a.active { color: $color-white; }
+
+}
+
+.no-padding {
+  padding: 0;
+}

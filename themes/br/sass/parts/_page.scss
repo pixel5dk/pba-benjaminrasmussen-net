@@ -1,0 +1,22 @@
+.page__page-pageheader--container {
+  
+  h1 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 48px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 22px;
+  }
+
+  #blog_link, #portfolio_link {
+    background-color: $color-alt;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+}
