@@ -1,0 +1,30 @@
+@font-face {
+    font-family: rockwell;
+    src: url(../fonts/ROCK.TTF);
+}
+@font-face {
+    font-family: rockwell;
+    src: url(../fonts/ROCKB.TTF);
+    font-weight: bold;
+}
+@font-face {
+    font-family: test;
+    src: url(../fonts/TEST.TTF);
+}
+
+body {
+  font-family: rockwell;
+}
+
+// Links
+  a, a:link, a:active, a.active { 
+    color: $color-alt;
+    //font-weight: bold; 
+  }
+
+.content__container--page-header {
+    a, a:link, a:active, a.active { 
+      color: $color-white;
+      //font-weight: bold;
+    }
+}

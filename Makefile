@@ -1,6 +1,6 @@
 
 BACKUP_DIR=/vagrant/drushdumps
-NOW=$(shell date +%Y%m%d%H%M%S)
+NOW=$(shell date +%Y-%m-%d_%H-%M)
 # DOMAIN=benjaminrasmussen.net
 DB_NAME=d7_benjaminrasmussen
 ADMIN_USER=root
@@ -19,7 +19,7 @@ backup-db:
 	#$(MYSQLDUMP) $(DB_NAME) | gzip > $(BACKUP_DIR)/$(DB_NAME)_$(NOW).sql.gz
 
 drush-make:
-	drush make --working-copy --no-core --contrib-destination=. -y $(DRUSH_MAKEFILE)
+	drush make -only-once --strict=0 --working-copy --no-core --contrib-destination=. -y $(DRUSH_MAKEFILE)
 
 clear-cache:
 	drush cc all

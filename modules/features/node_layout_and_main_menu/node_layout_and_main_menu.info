@@ -1,0 +1,17 @@
+name = Node layout and main menu
+core = 7.x
+package = BR
+version = 7.x-1.0
+project = node_layout_and_main_menu
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = menu
+dependencies[] = page_manager
+dependencies[] = text
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_instance][] = node-page-body
+features[menu_custom][] = main-menu
+features[node][] = page
+features[page_manager_handlers][] = node_view_panel_context
