@@ -6,8 +6,9 @@
  */
 
 /**
-* Implements hook_entity_info_alter().
-*/
+ * Implements hook_entity_info_alter().
+ * todo: Better naming convention for viewmodes
+ */
 function br_site_entity_info_alter(&$entity_info) {
   $entity_info['node']['view modes']['teaser_compact'] = array(
     'label' => t('Compact Teaser'),
@@ -31,6 +32,10 @@ function br_site_entity_info_alter(&$entity_info) {
   );
   $entity_info['node']['view modes']['frontpage_default'] = array(
     'label' => t('Frontpage Default'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['overview'] = array(
+    'label' => t('Overview'),
     'custom settings' => TRUE,
   );
 }

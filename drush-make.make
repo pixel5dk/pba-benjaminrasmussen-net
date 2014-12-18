@@ -14,6 +14,12 @@ projects[admin_menu][download][type] = "git"
 projects[admin_menu][download][url] = "http://git.drupal.org/project/admin_menu.git"
 projects[admin_menu][download][tag] = "7.x-3.0-rc4"
 
+projects[better_exposed_filters][type] = "module"
+projects[better_exposed_filters][subdir] = "contrib"
+projects[better_exposed_filters][download][type] = "git"
+projects[better_exposed_filters][download][url] = "http://git.drupal.org/project/better_exposed_filters.git"
+projects[better_exposed_filters][download][tag] = "7.x-3.0"
+
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][download][type] = "git"

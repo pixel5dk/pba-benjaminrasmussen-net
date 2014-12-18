@@ -25,4 +25,8 @@ function br_preprocess_node(&$vars) {
     $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->type . '--frontpage-hot';   
     $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->nid . '--frontpage-hot';
   }
+  if($vars['view_mode'] == 'overview') {
+    $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->type . '--overview';   
+    $vars['theme_hook_suggestions'][] = 'node--' . $vars['node']->nid . '--overview';
+  }
 }
