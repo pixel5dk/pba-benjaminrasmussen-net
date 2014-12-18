@@ -1,3 +1,9 @@
+html {
+  // Always show the scrollbar
+   overflow-y: -moz-scrollbars-vertical;
+   overflow-y: scroll;
+}
+
 body {
   margin: 0; // todo: fix these things
   &:before {
