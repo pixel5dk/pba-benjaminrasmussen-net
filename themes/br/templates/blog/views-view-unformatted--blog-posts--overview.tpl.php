@@ -7,10 +7,8 @@
  * @ingroup views_templates
  */
 ?>
-<div class="frontpage__row--container">
+<div class="frontpage__row--container blog__overview">
   <?php foreach ($rows as $id => $row): ?>
-    <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
       <?php print $row; ?>
-    </div>
   <?php endforeach; ?>
 </div>
