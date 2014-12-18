@@ -3,7 +3,6 @@
  * todo: add comment syntax
  *
  */
-dpm($content);
 ?>
 <div class="blog__post--headers">
   <h1 class="blog__post--headers--title">

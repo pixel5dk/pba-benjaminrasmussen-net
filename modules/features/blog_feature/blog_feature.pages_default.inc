@@ -86,7 +86,7 @@ function blog_feature_default_page_manager_pages() {
     $pane->panel = 'top';
     $pane->type = 'node';
     $pane->subtype = 'node';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'nid' => '11',
@@ -109,6 +109,29 @@ function blog_feature_default_page_manager_pages() {
     $pane->uuid = '7e70287a-73dc-44c5-886c-a34e042559b7';
     $display->content['new-7e70287a-73dc-44c5-886c-a34e042559b7'] = $pane;
     $display->panels['top'][0] = 'new-7e70287a-73dc-44c5-886c-a34e042559b7';
+    $pane = new stdClass();
+    $pane->pid = 'new-db4db37c-06e4-4e9a-b79a-d3ac03edb31c';
+    $pane->panel = 'top';
+    $pane->type = 'block';
+    $pane->subtype = 'views--exp-blog_posts-overview';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'inherit_path' => 1,
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'db4db37c-06e4-4e9a-b79a-d3ac03edb31c';
+    $display->content['new-db4db37c-06e4-4e9a-b79a-d3ac03edb31c'] = $pane;
+    $display->panels['top'][1] = 'new-db4db37c-06e4-4e9a-b79a-d3ac03edb31c';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-7e70287a-73dc-44c5-886c-a34e042559b7';
   $handler->conf['display'] = $display;
