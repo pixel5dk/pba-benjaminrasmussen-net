@@ -38,3 +38,136 @@
   padding: 0;
 }
 
+// Overview
+// todo: Check this, it was rushed
+
+.blog__overview {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 760px;
+
+}
+
+.blog__overview--item {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba($color-alt-r, $color-alt-g, $color-alt-b, 0.75);
+  clear: both;
+  height: 120px;
+  overflow: hidden;
+}
+
+.blog__overview--item--image {
+  float: left;
+  width: 140px;
+  height: 110px;
+  overflow: hidden;
+}
+
+
+.blog__overview--item--content {
+  float: left;
+  width: 608px;
+  height: 110px;
+  margin-left: 12px;
+  font-size: 16px;
+  overflow: hidden;
+
+}
+
+.blog__overview--item--title {
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.blog__overview--item--body {
+  height: 57px;
+  overflow: hidden;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.blog__overview--item--date {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+
+  a {
+    color: rgba($color-alt-r, $color-alt-g, $color-alt-b, 0.7);
+    float: left;
+  }
+}
+
+.blog__overview--item--tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
+  li {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+
+  li:first-of-type {
+    &:before {
+      content: ' |';
+    }
+  }
+
+  li:not(:last-of-type) {
+    &:after {
+      content: ', ';
+    }
+  }    
+}
+
+
+
+#views-exposed-form-blog-posts-overview {
+  width: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  #edit-title-wrapper{
+    width: 220px;
+
+    input {
+      padding: 5px;
+      margin-top: 5px;
+      width: 200px;
+      height: 25px;
+      border: 0;
+
+    }
+  }
+
+  #edit-field-tags-wrapper{
+    width: 220px;
+
+    input {
+      padding: 5px;
+      margin-top: 5px;
+      width: 200px;
+      height: 25px;
+            border: 0;
+
+    }
+  }
+
+  #edit-submit-blog-posts {
+    margin-top: 25px;
+    background-color: #fff;
+    height: 37px;
+    border: 0;
+    padding: 5px;
+  }
+}
