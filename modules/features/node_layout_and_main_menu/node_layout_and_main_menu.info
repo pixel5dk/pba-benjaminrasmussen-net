@@ -1,7 +1,7 @@
 name = Node layout and main menu
 core = 7.x
 package = BR
-version = 7.x-1.0
+version = 7.x-1.2
 project = node_layout_and_main_menu
 dependencies[] = ctools
 dependencies[] = features
@@ -15,3 +15,5 @@ features[field_instance][] = node-page-body
 features[menu_custom][] = main-menu
 features[node][] = page
 features[page_manager_handlers][] = node_view_panel_context
+features[page_manager_handlers][] = node_view_panel_context_2
+mtime = 1418815400

@@ -7,12 +7,15 @@
   engine      = phptemplate
   screenshot  = screenshot.png
 
-scripts[] = js/base.min.js
+scripts[] = js/base.js
+scripts[] = libraries/image-slider/sss.js
+scripts[] = libraries/mixitup/jquery.mixitup.min.js
 
 plugins[panels][layouts] = layouts
 
 ; Theme
 stylesheets[all][] = css/screen.css
+stylesheets[all][] = libraries/image-slider/sss.css
 
 regions[top] = Top
 regions[header] = Header

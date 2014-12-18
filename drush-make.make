@@ -62,6 +62,12 @@ projects[i18n][download][type] = "git"
 projects[i18n][download][url] = "http://git.drupal.org/project/i18n.git"
 projects[i18n][download][tag] = "7.x-1.11"
 
+projects[jquery_update][type] = "module"
+projects[jquery_update][subdir] = "contrib"
+projects[jquery_update][download][type] = "git"
+projects[jquery_update][download][url] = "http://git.drupal.org/project/jquery_update.git"
+projects[jquery_update][download][tag] = "7.x-2.4"
+
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
 projects[panels][download][type] = "git"
