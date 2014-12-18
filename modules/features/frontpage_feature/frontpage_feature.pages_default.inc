@@ -72,7 +72,9 @@ function frontpage_feature_default_page_manager_pages() {
     $pane->subtype = 'frontpage_view-frontpage_breaking';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'items_per_page' => '2',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -91,7 +93,9 @@ function frontpage_feature_default_page_manager_pages() {
     $pane->subtype = 'frontpage_view-frontpage_hot';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'items_per_page' => '2',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -110,7 +114,9 @@ function frontpage_feature_default_page_manager_pages() {
     $pane->subtype = 'frontpage_view-frontpage_default';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'items_per_page' => '7',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,

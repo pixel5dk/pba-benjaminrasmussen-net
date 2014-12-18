@@ -42,8 +42,14 @@ function node_layout_and_main_menu_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
-      'page_content' => array(
+      'overview' => array(
         'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'page_content' => array(
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
