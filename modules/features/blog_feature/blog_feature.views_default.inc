@@ -72,15 +72,60 @@ function blog_feature_views_default_views() {
   /* Display: Overview */
   $handler = $view->new_display('panel_pane', 'Overview', 'overview');
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '8';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'entity';
-  $handler->display->display_options['row_options']['view_mode'] = 'frontpage_default';
+  $handler->display->display_options['row_options']['view_mode'] = 'overview';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['exposed_block'] = TRUE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Indexed Node: Content type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'blog_post' => 'blog_post',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Indexed Node: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['group'] = 1;
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Title';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  /* Filter criterion: Indexed Node: Tags */
+  $handler->display->display_options['filters']['field_tags']['id'] = 'field_tags';
+  $handler->display->display_options['filters']['field_tags']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['filters']['field_tags']['field'] = 'field_tags';
+  $handler->display->display_options['filters']['field_tags']['group'] = 1;
+  $handler->display->display_options['filters']['field_tags']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_tags']['expose']['operator_id'] = 'field_tags_op';
+  $handler->display->display_options['filters']['field_tags']['expose']['label'] = 'Tags';
+  $handler->display->display_options['filters']['field_tags']['expose']['operator'] = 'field_tags_op';
+  $handler->display->display_options['filters']['field_tags']['expose']['identifier'] = 'field_tags';
+  $handler->display->display_options['filters']['field_tags']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_tags']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
   $handler->display->display_options['pane_title'] = 'Blog Posts : Overview';
   $handler->display->display_options['inherit_panels_path'] = '1';
   $translatables['blog_posts'] = array(
@@ -108,6 +153,8 @@ function blog_feature_views_default_views() {
     t('Blog Posts : Latest'),
     t('View panes'),
     t('Overview'),
+    t('Title'),
+    t('Tags'),
     t('Blog Posts : Overview'),
   );
   $export['blog_posts'] = $view;

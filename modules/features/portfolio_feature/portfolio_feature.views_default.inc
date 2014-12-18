@@ -74,6 +74,13 @@ function portfolio_feature_views_default_views() {
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'entity';
+  $handler->display->display_options['row_options']['view_mode'] = 'overview';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['pane_title'] = 'Portfolio Items : Overview';
   $handler->display->display_options['inherit_panels_path'] = '1';
   $translatables['portfolio_items'] = array(
