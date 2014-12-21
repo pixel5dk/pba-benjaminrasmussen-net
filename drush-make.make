@@ -68,11 +68,23 @@ projects[i18n][download][type] = "git"
 projects[i18n][download][url] = "http://git.drupal.org/project/i18n.git"
 projects[i18n][download][tag] = "7.x-1.11"
 
+projects[imce][type] = "module"
+projects[imce][subdir] = "contrib"
+projects[imce][download][type] = "git"
+projects[imce][download][url] = "http://git.drupal.org/project/imce.git"
+projects[imce][download][tag] = "7.x-1.9"
+
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][download][type] = "git"
 projects[jquery_update][download][url] = "http://git.drupal.org/project/jquery_update.git"
 projects[jquery_update][download][tag] = "7.x-2.4"
+
+projects[media][type] = "module"
+projects[media][subdir] = "contrib"
+projects[media][download][type] = "git"
+projects[media][download][url] = "http://git.drupal.org/project/media.git"
+projects[media][download][tag] = "7.x-1.4"
 
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
