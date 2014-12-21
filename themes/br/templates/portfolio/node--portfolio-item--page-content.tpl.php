@@ -13,6 +13,7 @@
     </h2>
   </div>
   <div class="portfolio__item--content">
+    <?php print ($content['body']['#items']['0']['summary']); ?>    
     <?php print render($content['body']['0']); ?>    
   </div>
 </div>
