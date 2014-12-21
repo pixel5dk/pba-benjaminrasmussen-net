@@ -56,6 +56,12 @@ projects[entity][download][type] = "git"
 projects[entity][download][url] = "http://git.drupal.org/project/entity.git"
 projects[entity][download][tag] = "7.x-1.5"
 
+projects[exclude_node_title][type] = "module"
+projects[exclude_node_title][subdir] = "contrib"
+projects[exclude_node_title][download][type] = "git"
+projects[exclude_node_title][download][url] = "http://git.drupal.org/project/exclude_node_title.git"
+projects[exclude_node_title][download][tag] = "7.x-1.7"
+
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
 projects[features][download][type] = "git"
