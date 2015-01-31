@@ -64,7 +64,7 @@ function blog_feature_field_default_field_instances() {
         'label' => 'above',
         'module' => 'text',
         'settings' => array(
-          'trim_length' => 140,
+          'trim_length' => 450,
         ),
         'type' => 'text_summary_or_trimmed',
         'weight' => 3,
@@ -78,12 +78,9 @@ function blog_feature_field_default_field_instances() {
       ),
       'page_header' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'search_index' => array(
         'label' => 'hidden',
@@ -103,7 +100,7 @@ function blog_feature_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser_compact' => array(
         'label' => 'hidden',
@@ -214,7 +211,7 @@ function blog_feature_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -226,7 +223,7 @@ function blog_feature_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser_compact' => array(
         'label' => 'above',
@@ -323,13 +320,13 @@ function blog_feature_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'search_index' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -341,7 +338,7 @@ function blog_feature_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'teaser_compact' => array(
         'label' => 'above',
@@ -366,8 +363,8 @@ function blog_feature_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_tags'
-  $field_instances['node-blog_post-field_tags'] = array(
+  // Exported field_instance: 'node-blog_post-field_tags_blog'
+  $field_instances['node-blog_post-field_tags_blog'] = array(
     'bundle' => 'blog_post',
     'default_value' => NULL,
     'deleted' => 0,
@@ -378,58 +375,52 @@ function blog_feature_field_default_field_instances() {
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 5,
       ),
       'frontpage_breaking' => array(
         'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_plain',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'frontpage_default' => array(
         'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_plain',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'frontpage_hot' => array(
         'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_plain',
-        'weight' => 2,
-      ),
-      'frontpage_overview' => array(
-        'label' => 'above',
-        'module' => 'i18n_taxonomy',
-        'settings' => array(),
-        'type' => 'i18n_taxonomy_term_reference_plain',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'overview' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_plain',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'page_content' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'i18n_taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
+        'type' => 'i18n_taxonomy_term_reference_plain',
+        'weight' => 0,
       ),
       'page_header' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
+        'module' => 'i18n_taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
+        'type' => 'i18n_taxonomy_term_reference_link',
+        'weight' => 0,
       ),
       'search_index' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
@@ -437,27 +428,26 @@ function blog_feature_field_default_field_instances() {
       ),
       'search_result' => array(
         'label' => 'above',
-        'module' => 'i18n_taxonomy',
         'settings' => array(),
-        'type' => 'i18n_taxonomy_term_reference_link',
-        'weight' => 1,
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser_compact' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_tags',
+    'field_name' => 'field_tags_blog',
     'label' => 'Tags',
     'required' => 0,
     'settings' => array(
@@ -471,7 +461,7 @@ function blog_feature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 3,
+      'weight' => 31,
     ),
   );
 

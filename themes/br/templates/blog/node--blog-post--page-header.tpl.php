@@ -6,7 +6,7 @@
 ?>
 <div class="blog__post--headers">
   <h1 class="blog__post--headers--title">
-    <span class="blog__post--headers--label"><?php print t('Blog Post'); ?> </span>
+    <span class="blog__post--headers--label"><?php print t('Blog Post'); ?> - <?php print gmdate("d/m/Y", $node->changed); ?></span>
     <?php print $node->title; ?>
   </h1>
   <h2 class="blog__post--headers--sub">

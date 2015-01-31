@@ -22,11 +22,11 @@
     <h3 class="blog__overview--item--date">
       <a href="<?php print $node_url; ?>"><?php print gmdate("d/m/Y", $node->changed); ?></a>
     <?php
-      if (isset($content['field_tags'])) {
+      if (isset($content['field_tags_blog'])) {
         $i = 0;
         print '<ul class="blog__overview--item--tags">';
-        foreach ($content['field_tags']['#items'] as $tag) {
-          print '<li>&nbsp;' . render($content['field_tags'][$i]) . '</li>';
+        foreach ($content['field_tags_blog']['#items'] as $tag) {
+          print '<li>&nbsp;' . render($content['field_tags_blog'][$i]) . '</li>';
           $i++;
         } 
         print '</ul>';    
