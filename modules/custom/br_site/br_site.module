@@ -43,8 +43,8 @@ function br_site_entity_info_alter(&$entity_info) {
 /**
 * Implements hook_node_update().
 */
-function br_site_node_update($node) {
-/*
+/*function br_site_node_update($node) {
+
 // field_frontpage_status hot breaking default
 
 // todo: Do this better
@@ -81,5 +81,5 @@ $default_id = 7;
     }
 
   }
-*/
-}
+
+}*/
