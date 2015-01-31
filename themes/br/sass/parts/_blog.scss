@@ -9,13 +9,15 @@
 }
 
 .blog__post--headers--label {
+  display: block;
   position: absolute;
-  top: 25px;
+  margin-top: -15px;
   font-size: 18px;
-  color: rgba($color-white-r, $color-white-g, $color-white-b, 0.4)
+  color: rgba($color-white-r, $color-white-g, $color-white-b, 0.6)
 }
 
 .blog__post--headers--title {
+  display: inline-block;
   margin-top: 30px;
   margin-bottom: 5px;
   font-size: 55px;
